@@ -41,7 +41,7 @@ class PickerColumn extends Component {
     this.reference.current.removeEventListener('touchcancel', this.handleTouchCancel);
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     if (this.state.isMoving) {
       return;
     }
